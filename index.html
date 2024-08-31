@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="inner">D Global <span class="chg">Tech</span></span>
+        </div>
+
+        <nav id="navs">
+            <img src="cancel.png" id="cancel" width="40px" style="position: absolute; margin-left:50px; margin-top: -80px;" onclick="hide()">
+            <a href="#">Home</a>
+            <a href="about.html">About</a>
+            <a href="">Contact</a>
+            <a href="">Rates</a>
+        </nav>
+
+        <div class="imgbx">
+            <img src="option2.png" width="30px" style="mix-blend-mode: multiply;" onclick="show()">
+        </div>
+    </header>
+
+    <main>
+        
+        <div class="container">
+            <h1>Welcome</h1>
+            <h2>You are at the right place!!!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quasi odio dignissimos facere sunt ad impedit sequi, ab temporibus quae quod accusamus doloribus iusto ea eveniet tenetur laborum vitae. Ex!
+            </p>
+            <div class="btns">
+                <button class="btn">Contact</button>
+                <button >Lets Talk</button>
+            </div>
+        </div>
+    </main>
+   <footer>
+    <div class="container0">
+      
+        <div id="content" onclick="seeOne()">
+            <img src="cancel.png" id="once" width="40px" onclick="hideSide()">
+      <img src="option1.png"  width="40px" id="two" onclick="showMore()" style="mix-blend-mode: multiply;">
+            <img src="github.png" width="40px">
+            <img src="linked.png" width="40px">
+            <img src="stack.png" width="40px"> 
+        </div>
+      </div>
+    <div class="container1">
+      <h3>© 2024 D Global Tech. All Rights Reserved</h3>
+    </div>
+    <div class="container2">
+       
+       
+        <div id="imgcircle">
+            <img src="option2.png" onclick="seeBack()"  width="40px" id="one" style="mix-blend-mode: multiply;">
+            <img src="cancel.png" id="oncer" width="40px" onclick="hideBack()">
+            <img src="facebook.png" width="40px">
+            <img src="whatsapp.png" width="40px">
+            <img src="insta.png" width="40px">
+            <img src="twitter.png" width="40px">
+        </div>
+    </div>
+   </footer>
+   <script>
+   function show() {
+        document.getElementById("navs").style.display ="flex";
+    }
+ 
+    function hide(){
+        document.getElementById("navs").style.display ="none";
+       
+    }
+
+    function hideSide(){
+        document.getElementById("imgcircle").style.display ="none";
+        document.getElementById("one").style.display ="block";
+        document.getElementById("once").style.display ="none";
+    }
+    function showMore() {
+        document.getElementById("content").style.display ="flex";
+        document.getElementById("two").style.display ="none";
+        document.getElementById("once").style.display ="none";
+        document.getElementById("oncer").style.display ="flex";
+    }
+    function hideBack() {
+        document.getElementById("content").style.display ="flex";
+        document.getElementById("imgcircle").style.display ="none";
+        document.getElementById("two").style.display ="flex";
+        document.getElementById("oncer").style.display ="none";
+        document.getElementById("one").style.display ="block";
+    }
+    function seeBack() {
+        document.getElementById("content").style.display ="none";
+        document.getElementById("two").style.display ="none";
+        document.getElementById("oncer").style.display ="flex";
+        document.getElementById("once").style.display ="flex";
+        document.getElementById("one").style.display ="flex";
+    }
+   </script>
+</body>
+</html>
